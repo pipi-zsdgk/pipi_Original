@@ -728,4 +728,455 @@ footer p{
     padding: 20px;
 }
 
+/*レスポンシブ化*/
 
+/*スマホ縦*/
+@media screen and (max-width: 480px){
+
+    #fv{
+        height: 100vh;
+        width: 100vw;
+        background-image: url(top-sp.png);
+    }
+
+    .menu-btn{
+        display: none;
+    }
+
+    .shuffle-logo img{
+        width: 350px;
+        height: 140px;
+        margin-top: 150px;
+    }
+
+    .shuffle-logo-opacity-01 img{
+        display: none;
+    }
+
+    .shuffle-logo-opacity-02 img{
+        display: none;
+    }
+
+    .shuffle-logo-opacity-03 img{
+        display: none;
+    }
+
+    #about{
+        width: 100%;
+        height: 750px;
+    }
+
+    .title-blue{
+        font-size: 36px;
+    }
+
+    .slogan{
+        font-size: 24px;
+        margin-left: 50px;
+        width: 300px;
+        text-align: center;
+        border-bottom: 5px solid #4F85A6;
+    }
+
+    .sub-title{
+        font-size: 12px;
+        width: 400px;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .intro-text{
+        font-size: 10px;
+        width: 400px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #about p{
+        margin: 0 auto;
+        line-height: 30px;
+    }
+
+    .all-members img{
+        top: 50px;
+        left: 35px;
+        width: 320px;
+        height: 190px;
+        margin-bottom: 50px;
+    }
+
+    .members-box{
+        width: 320px;
+        height: 190px;
+        top: 60px;
+        left: 45px;
+    }
+
+    .sum-title-white{
+        font-size: 36px;
+        margin-top: -50px;
+    }
+
+    .sum-title-white::before {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 80px;
+        content: 'SUMMER';
+        opacity: 0.3;
+        letter-spacing: 0.1em;
+    }
+
+    #win-activities{
+        background-image: none;
+        height: 1800px;
+    }
+
+    /*.haikei{
+        background-image: url(雪.png);
+    }*/
+
+    .win-title-blue{
+        font-size: 36px;
+        margin-top: -50px;
+    }
+
+    .win-title-blue::before{
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #4F85A6;
+        font-size: 80px;
+        content: 'WINTER';
+        opacity: 0.3;
+        letter-spacing: 0.1em;
+    }
+
+    .training_camp{
+        position: relative;
+        width: 900px;
+        height: 350px;
+        margin-top: 100px;
+    }
+
+    .camp-box-img-left img{
+        display: block;
+        width: 240px;
+        height: 170px;
+        position: absolute;
+        left: 29px;
+        top: -80px;
+        margin-left: 10px;
+        padding-left: 40px;
+    }
+
+    .camp-box-img-right img{
+        display: block;
+        width: 240px;
+        height: 170px;
+        position: absolute;
+        left: 80px;
+        top: -60px;
+        padding-right: 40px;
+    }
+
+    .camp-box-text-left{
+        background-color: transparent;
+        width: 400px;
+        height: 170px;
+        position: absolute;
+        left: -30px;
+        top: 60px;
+    }
+
+    .camp-box-text-left h3{
+        font-size: 20px;
+        color: #4F85A6;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .camp-box-text-left p{
+        font-size: 10px;
+        color: #4F85A6;
+        text-align: center;
+        line-height: 20px;
+        margin-left: 0;
+    }
+
+    .camp-box-text-right{
+        background-color: transparent;
+        width: 400px;
+        height: 170px;
+        position: absolute;
+        left: -30px;
+    }
+
+    .camp-box-text-right h3{
+        font-size: 20px;
+        color: #4F85A6;
+        text-align: center;
+    }
+
+    .camp-box-text-right p{
+        font-size: 10px;
+        color: #4F85A6;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .right_number{
+        font-size: 16px;
+        margin-left: 350px;
+        padding-top: 150px;
+    }
+
+    .left_number{
+        font-size: 16px;
+        padding-top: 200px;
+        margin-left: -110px;
+    }
+
+    #season-movie{
+        height: 500px;
+    }
+
+    .title-white{
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .movie-title img{
+        position: absolute;
+        opacity: 0.1;
+        top: 20px;
+        left: 15px;
+        width: 350px;
+    }
+
+    .season-movie{
+        width: 300px;
+        height: 210px;
+        margin-left: -330px;
+    }
+
+    .past-movie a{
+        position: absolute;
+        font-size: 12px;
+        font-weight: bold;
+        color: #4F85A6;
+        background-color: #fff;
+        padding: 10px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 280px;
+        margin-left: -130px;
+        width: 200px;
+    }
+    
+    .past-movie a:hover{
+        padding: 20px 40px;
+        transition: 0.5s;
+    }
+    
+    .past-movie{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #boast-point{
+        height: 950px;
+    }
+
+    .title-blue{
+        font-size: 28px;
+    }
+
+    .boast-point-01{
+        font-size: 12px;
+        position: absolute;
+        top: 180px;
+        left: -450px;
+        width: 200px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-left: 3px solid #000;
+        border-bottom: none;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+
+    .boast-point-01-text{
+        font-size: 10px;
+        width: 200px;
+        position: absolute;
+        top: 140px;
+        left: -430px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .boast-number-01{
+        font-size: 60px;
+        position: absolute;
+        top: 190px;
+        left: -280px;
+    }
+
+    .cowday-movie{
+        width: 280px;
+        height: 180px;
+        margin-left: 60px;
+        
+    }
+
+    .boast-02 img{
+        width: 280px;
+        height: 180px;
+        margin-top: 170px;
+        margin-left: 60px;
+    }
+
+    .boast-point-02{
+        font-size: 12px;
+        position: absolute;
+        top: 290px;
+        left: 90px;
+        width: 170px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-right: 3px solid #000;
+        border-bottom: none;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    .boast-point-02-text{
+        font-size: 10px;
+        width: 300px;
+        position: absolute;
+        top: 250px;
+        left: -350px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .boast-number-02{
+        font-size: 60px;
+        position: absolute;
+        top: 300px;
+        left: 100px;
+    }
+
+    #join{
+        height: 600px;
+    }
+
+    .join-logo{
+        width: 270px;
+        height: 70px;
+        margin-top: 60px;
+    }
+
+    .join-logo p{
+        font-size: 36px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .join-logo img{
+        width: 190px;
+        height: 80px;
+        margin-top: 50px;
+        margin-left: 100px;
+        transform: rotate(5deg);
+    }
+
+    .triangle{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-right: 50px solid #fff;
+        transform: rotate(45deg);
+        margin-left: 202px;
+        margin-top: -74px;
+    }
+
+    .join-shuffle-text{
+        font-size: 16px;
+        width: 400px;
+        padding-top: 300px;
+    }
+
+    .board-01{
+        display: none;
+    }
+
+    .board-02{
+        display: none;
+    }
+
+    .app-icon-insta img{
+        width: 50px;
+        height: 50px;
+        margin-left: -520px;
+        margin-top: 250px;
+    }
+
+    .app-icon-youtube img{
+        width: 85px;
+        height: 95px;
+        margin-left: -502px;
+        margin-top: 220px;
+    }
+
+    .app-icon-insta a{
+        font-size: 12px;
+        color: #fff;
+        margin-left: -450px;
+        margin-top: 265px;
+    }
+
+    .app-icon-youtube a{
+        font-size: 12px;
+        color: #fff;
+        width: 150px;
+        margin-left: -400px;
+        margin-top: 250px;
+    }
+
+    .app-icon-youtube span{
+        font-size: 6px;
+    }
+
+    .oblique_line-top{
+        transform: rotate(150deg);
+        transform-origin: 0% 0%;
+        width: 20px;
+        border-top: 2px solid #fff;
+        margin-top: 240px;
+        margin-left: 20px;
+    }
+    
+    .oblique_line-bottom{
+        transform: rotate(30deg);
+        transform-origin: 0% 0%;
+        width: 20px;
+        border-top: 2px solid #fff;
+        margin-top: 285px;
+        margin-left: -37px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+
+}
