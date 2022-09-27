@@ -274,15 +274,10 @@
 }
 
 .images{
+    padding-top: 80px;
     width: 1000px;
-    height: 460px;
+    height: 700px;
     margin: 0 auto;
-}
-
-.image img{
-    width: 300px;
-    height: 300px;
-    display: flex;
 }
 
 .sum-event-text{
