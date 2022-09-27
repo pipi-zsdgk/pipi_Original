@@ -3,19 +3,171 @@
     padding: 0;
 }
 
-#fv{
-    height: 100vh;
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
     background-color: #4F85A6;
 }
 
-.fv-img{
-    width: 50%;
-    float: left;
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
 }
 
-.logo{
-    width: 50%;
-    height: 50%;
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #4F85A6;
+}
+
+.menu-content ul {
+    padding: 70px 700px;
+    line-height: 110px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.menu-content ul li {
+    list-style: none;
+}
+
+.menu-content ul li a {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color:#ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-content ul li span{
+    font-size: 20px;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -34px;
+    text-align: center;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #4F85A6;
+    transition: all 0.5s;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;
+}
+
+.follow-us{
+    display: flex;
+    margin-left: 670px;
+    margin-top: -30px;
+}
+
+.follow-us p{
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+    color:#ffffff;
+    margin-right: 50px;
+    letter-spacing: 0.1em;
+}
+
+.follow-us img{
+    margin-right: 30px;
+}
+
+.follow-insta img{
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.follow-youtube img{
+    width: 90px;
+    height: 90px;
+    margin-top: -25px;
+}
+
+#fv{
+    height: 100vh;
+    background-image: url(top.png);
+    background-size: cover;
+}
+
+.shuffle-logo img{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 900px;
+}
+
+.shuffle-logo-opacity-01 img{
+    position: absolute;
+    opacity: 0.1;
+    width: 900px;
+    margin-left: -70px;
+}
+
+.shuffle-logo-opacity-02 img{
+    position: absolute;
+    margin-top: 280px;
+    opacity: 0.1;
+    width: 900px;
+    margin-left: -70px;
+}
+
+.shuffle-logo-opacity-03 img{
+    position: absolute;
+    margin-top: 560px;
+    opacity: 0.1;
+    width: 900px;
+    margin-left: -70px;
 }
 
 #about{
@@ -40,13 +192,12 @@
 
 .slogan{
     font-family: 'Teko', sans-serif;
-    font-size: 36px;
     letter-spacing: 0.3em;
-    border-bottom: 3px solid #000;
+    border-bottom: 10px solid rgba(79, 133, 166, 0.8);
     width: 80%;
     margin: 60px 0px 60px 140px;
     font-style: italic;
-    font-size: 36px;
+    font-size: 42px;
 }
 
 #about p{
@@ -122,9 +273,41 @@
     letter-spacing: 0.1em;
 }
 
+.images{
+    width: 1000px;
+    height: 460px;
+    margin: 0 auto;
+}
+
+.image img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+.sum-event-text{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.sum-event-text h3{
+    color: #4F85A6;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sum-event-text p{
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 40px;
+}
+
 #win-activities{
     padding-top: 60px;
-    /*background-image: url(雪.png);*/
+    background-image: url(雪.png);
 }
 
 .win-activities-title {
@@ -155,13 +338,6 @@
     content: 'WINTER';
     opacity: 0.3;
     letter-spacing: 0.1em;
-}
-
-.images{
-    position: relative;
-    width: 540px;
-    height: 460px;
-    margin: 0 auto;
 }
 
 .training_camp{
@@ -284,19 +460,23 @@
 
 .movie-title img{
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     top: -10px;
     left: 250px;
     width: 1100px;
+    z-index: 10;
 }
 
 .season-movie{
+    position: absolute;
     padding: 60px 380px;
     width: 900px;
     height: 500px;
+    z-index: 20;
 }
 
-#season-movie a{
+.past-movie a{
+    position: absolute;
     font-size: 18px;
     font-weight: bold;
     color: #4F85A6;
@@ -305,10 +485,12 @@
     border-radius: 50px;
     text-decoration: none;
     text-align: center;
+    margin-top: 570px;
+    margin-left: -250px;
 }
 
-#season-movie a:hover{
-    padding: 30px 110px;
+.past-movie a:hover{
+    padding: 20px 105px;
     transition: 0.5s;
 }
 
@@ -477,6 +659,71 @@
     height: 250px;
     margin-left: 1250px;
     padding-top: 400px;
+}
+
+.app-icon-insta{
+   display: flex;
+   margin-left: 630px;
+   margin-top: -200px;
+}
+
+.app-icon-insta img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.app-icon-insta a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.app-icon-youtube{
+    display: flex;
+    margin-left: 595px;
+    margin-top: 100px;
+ }
+
+.app-icon-youtube img{
+    width: 150px;
+    height: 150px;
+}
+
+.app-icon-youtube a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 55px;
+    margin-left: 200px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.app-icon-youtube span{
+    font-size: 12px;
+}
+
+.oblique_line-top{
+    transform: rotate(150deg);
+    transform-origin: 0% 0%;
+    width: 50px;
+    border-top: 2px solid #fff;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.oblique_line-bottom{
+    transform: rotate(30deg);
+    transform-origin: 0% 0%;
+    width: 50px;
+    border-top: 2px solid #fff;
+    margin-top: 100px;
+    margin-left: -90px;
 }
 
 footer p{
