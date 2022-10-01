@@ -11,6 +11,13 @@ $(function($){
         prevArrow: '<img src="矢印.png" class="slide-arrow prev-arrow">',
         nextArrow: '<img src="矢印.png" class="slide-arrow next-arrow">',
         slidesToShow: 1,
+        responsive: [{
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              arrows: false
+            }
+        }]
     })
 
 });
