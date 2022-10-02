@@ -804,9 +804,9 @@ footer p{
 /*スマホ縦*/
 @media screen and (max-width: 480px){
 
-    *{
-        min-width: 0;
+    * {
         min-height: 0;
+        min-width : 0;
     }
 
     #fv{
@@ -1003,15 +1003,18 @@ footer p{
     }
 
     .images{
+        max-width: 100%;
+        height: auto;
         padding-top: 80px;
         width: 75vw;
-        height: 85vh;
+        height: 90vh;
         margin: 0 auto;
         box-sizing:border-box;
     }
     
     .image{
         margin: 0 auto;
+        display: block;
     }
     
     .sum-activities-image img{
@@ -1026,6 +1029,7 @@ footer p{
         background-color: #fff;
         margin-top: 300px;
         margin-left: 0;
+        display: block;
     }
     
     .sum-activities-text-box h3{
@@ -1056,12 +1060,12 @@ footer p{
 
     #win-activities{
         background-image: none;
-        height: 200vh;
+        height: 210vh;
     }
 
     .haikei{
         background-image: url(haikei.png);
-        height: 200vh;
+        height: 210vh;
     }
 
     .win-title-blue{
@@ -1084,21 +1088,22 @@ footer p{
 
     .training_camp{
         position: relative;
-        width: 100vw;
-        height: 40vh;
-        padding: 20px 30px 30px 30px;
+        width: 85vw;
+        height: 45vh;
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        display: block;
     }
 
     .camp-box-img-left img{
         display: block;
         width: 60vw;
         height: 20vh;
-        left: 0;
         top: 0;
         padding: 0;
         position: relative;
-        padding-left: 40px;
-        margin-left: 10px;
+        padding-left: 10%;
+        left: 5%;
         margin-top: 30px;
     }
 
@@ -1106,12 +1111,11 @@ footer p{
         display: block;
         width: 60vw;
         height: 20vh;
-        left: 0;
         top: 0;
         padding: 0;
         position: relative;
-        padding-right: 40px;
-        margin-left: 50px;
+        padding-right: 10%;
+        left: 15%;
         margin-top: 30px;
     }
 
@@ -1122,8 +1126,7 @@ footer p{
         top: 0;
         left: 0;
         padding: 0;
-        padding-top: 210px;
-        margin-bottom: 30px;
+        padding-top: 40%;
         position: absolute;
     }
 
@@ -1134,7 +1137,7 @@ footer p{
         top: 0;
         left: 0;
         padding: 0;
-        padding-top: 210px;
+        padding-top: 40%;
         position: absolute;
     }
 
@@ -1168,14 +1171,21 @@ footer p{
 
     .right_number{
         font-size: 16px;
-        margin-left: 310px;
-        padding-top: 20px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 85%;
+        top: 55%;
     }
 
     .left_number{
         font-size: 16px;
-        padding-top: 10px;
-        margin-left: -43px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 0;
+        top: 60%;
+        left: 10%;
     }
 
     #season-movie{
@@ -1188,20 +1198,29 @@ footer p{
     }
 
     .movie-title img{
-        position: absolute;
         opacity: 0.1;
         top: 20px;
-        left: 15px;
-        width: 350px;
+        left: 0;
+        padding-left: 30px;
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .movie{
+        position: relative;
+        width: 100%;
+        height: 50%;
+
     }
 
     .season-movie{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
         width: 80vw;
-        height:20vh;
-        padding: 0;
-        margin: 0 auto;
-        margin-left: 40px;
-        margin-top: 30px;
+        height: 20vh;
     }
 
     .past-movie a{
@@ -1213,9 +1232,9 @@ footer p{
         border-radius: 50px;
         text-decoration: none;
         text-align: center;
-        margin-top: 200px;
-        margin-left: -130px;
+        margin: 0;
         width: 200px;
+        left: 18%;
     }
     
     .past-movie a:hover{
@@ -1325,9 +1344,9 @@ footer p{
     }
 
     .join-logo{
-        width: 270px;
+        width: 65vw;
         height: 70px;
-        margin-top: 60px;
+        margin-top: 10%;
     }
 
     .join-logo p{
@@ -1337,10 +1356,13 @@ footer p{
     }
 
     .join-logo img{
-        width: 190px;
-        height: 80px;
-        margin-top: 50px;
-        margin-left: 100px;
+        width: 50vw;
+        height: 10vh;
+        margin: 0;
+        position: absolute;
+        padding-top: 80px;
+        left: 40%;
+        top: 50%;
         transform: rotate(5deg);
     }
 
@@ -1351,14 +1373,16 @@ footer p{
         border-bottom: 50px solid transparent;
         border-right: 50px solid #fff;
         transform: rotate(45deg);
-        margin-left: 202px;
-        margin-top: -74px;
+        position: absolute;
+        margin: 0;
+        left: 73%;
+        top: -10%;
     }
 
     .join-shuffle-text{
         font-size: 16px;
-        width: 400px;
-        padding-top: 300px;
+        width: 100vw;
+        padding-top: 75%;
     }
 
     .board-01{
