@@ -604,3 +604,518 @@ footer p{
     color: #4F85A6;
     padding: 20px;
 }
+
+/*レスポンシブ化*/
+
+/*スマホ縦*/
+@media screen and (max-width: 480px){
+
+    * {
+        min-height: 0;
+        min-width : 0;
+    }
+
+    /* ファーストビュー */
+    #home{
+        height: auto;
+        animation: bgchange 20s ease infinite;
+        background-size: cover;
+    }
+    
+    @keyframes bgchange {
+        0% {background-image: url(images/fv-1-sp.jpg)}
+        25% {background-image: url(images/fv-1-sp.jpg)}
+        50% {background-image: url(images/fv-2-sp.jpg)}
+        75% {background-image: url(images/fv-3-sp.jpg)}
+        100% {background-image: url(images/fv-4-sp.jpg)}
+    }
+
+    .top-page{
+        width: 100%;
+    }
+
+    .main-logo{
+        top: 0;
+        left: 0;
+    }
+
+    .main-logo img{
+        width: 80%;
+        padding: 40% 10%;
+    }
+
+    .sub-logo-1 img{
+        display: none;
+    }
+
+    .sub-logo-2 img{
+        display: none;
+    }
+
+    .sub-logo-3 img{
+        display: none;
+    }
+
+    /* About Shuffle */
+
+    #about{
+        height: auto;
+    }
+
+    .about-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-text-box{
+        width: 100vw;
+    }
+
+    .about-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 36px;
+        color: #4F85A6;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 10%;
+    }
+
+    .about-slogan{
+        font-family: 'Teko', sans-serif;
+        letter-spacing: 0.3em;
+        border-bottom: 5px solid rgba(79, 133, 166, 0.8);
+        width: 80%;
+        font-style: italic;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .about-text{
+        font-size: 10px;
+        line-height: 30px;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+    .about-text span{
+        font-size: 16px;
+    }
+
+    .about-img-box{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 80%;
+        margin-bottom: 20%;
+    }
+
+    .about-img-square{
+        width: 50vw;
+        height: 20vh;
+        background-color: #4F85A6;
+    }
+
+    .about-img img{
+        width: 50vw;
+        left: -5vw;
+        padding-right: 30%;
+        padding-left: 30%;
+        position: relative;
+        top: 5vh;
+    }
+
+    /* Summer Activities */
+    #sum-activities{
+        height: auto;
+        background-color: #4F85A6;
+    }
+
+    .sum-activities-title-box{
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+
+    .sum-activities-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 36px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 10%;
+    }
+
+    .sum-activities-sub-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 80px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 0;
+        opacity: 0.3;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .images{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .image img{
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .sum-activities-text{
+        background-color: #fff;
+        width: 80vw;
+        height: 40vh;
+        text-align: center;
+        margin-top: 40vh;
+    }
+
+    .sum-activities-text h3{
+        font-size: 24px;
+        color: #4F85A6;
+        padding: 0;
+        display: block;
+        margin: 0;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .sum-activities-text p{
+        font-size: 10px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        margin: 0;
+    }
+
+    .prev-arrow{
+        display: none;
+    }
+
+    .next-arrow{
+        display: none;
+    }
+
+    /* Season Movie */
+    #season-movie{
+        height: auto;
+        background-color: #4F85A6;
+    }
+
+    .season-movie-title-box{
+        position: relative;
+    }
+
+    .season-movie-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 36px;
+        color: #fff;
+        letter-spacing: 0.1em;
+        line-height: 40px;
+        text-align: center;
+        font-style: italic;
+        padding: 10%;
+    }
+
+    .season-movie-image img{
+        padding-left: 8%;
+        padding-top: 5%;
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .movie{
+        text-align: center;
+    }
+
+    .season-movie-movie{
+        width: 90vw;
+        height: 30vh;
+    }
+
+    .past-btn{
+        text-align: center;
+        padding: 10%;
+    }
+
+    .past-btn a{
+        padding: 15px 30px;
+        background-color: #fff;
+        color: #4F85A6;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    /* Boast Point */
+    #boast-point{
+        height: auto;
+    }
+
+    .boast-point{
+        padding-bottom: 50px;
+    }
+
+    .boast-point-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 24px;
+        color: #4F85A6;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 10%;
+    }
+
+    .boast-point-title span{
+        font-size: 30px;
+    }
+
+    .boast-point-1{
+        display: block;
+        justify-content: center;
+    }
+
+    .boast-point-1-movie{
+        text-align: center;
+    }
+
+    .cowday-movie{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .boast-point-1-text-title{
+        font-size: 12px;
+        text-align: center;
+        border-left: 2px solid #000;
+        border-bottom: none;
+        width: 70vw;
+        height: 5vh;
+        padding-top: 10%;
+        position: relative;
+        top: -1vh;
+        padding-bottom: 5%;
+        margin: auto;
+    }
+
+    .boast-point-1-number{
+        font-size: 60px;
+        letter-spacing: 0.1em;
+        font-family: 'Teko', sans-serif;
+        color: #4F85A6;
+        opacity: 0.5;
+        position: relative;
+        left: 70%;
+        top: -12vh;
+        width: 10%;
+    }
+
+    .boast-point-1-text-body{
+        font-size: 10px;
+        display: block;
+        top: -8vh;
+        text-align: center;
+    }
+
+    .boast-point-2{
+        display: block;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .boast-point-2-image{
+        text-align: center;
+    }
+
+    .boast-point-2-image img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .boast-point-2-text-title{
+        font-size: 12px;
+        text-align: center;
+        border-right: 2px solid #000;
+        border-bottom: none;
+        width: 70vw;
+        height: 5vh;
+        padding-top: 10%;
+        position: relative;
+        top: -1vh;
+        padding-bottom: 5%;
+        margin: auto;
+    }
+
+    .boast-point-2-number{
+        font-size: 60px;
+        letter-spacing: 0.1em;
+        font-family: 'Teko', sans-serif;
+        color: #4F85A6;
+        opacity: 0.5;
+        position: relative;
+        left: 25%;
+        top: -12vh;
+        width: 10%;
+    }
+
+    .boast-point-2-text-body{
+        font-size: 10px;
+        display: block;
+        top: -8vh;
+        text-align: center;
+    }
+
+    /* Join Shuffle */
+    #join{
+        height: auto;
+        background-color: #4F85A6;
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+
+    .shape{
+        display: flex;
+    }
+
+    .join-square{
+        width: 60vw;
+        height: 10vh;
+        background-color: #fff;
+        transform: rotate(355deg);
+        top: 0;
+        left: -4%;
+        margin-bottom: 10%;
+    }
+
+    .join-square p{
+        color: #4F85A6;
+        font-size: 36px;
+        letter-spacing: 0.1em;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        padding: 8%;
+    }
+
+    .join-triangle{
+        width: 0;
+        height: 0;
+        border-left: 55px solid transparent;
+        border-bottom: 55px solid transparent;
+        border-right: 55px solid #fff;
+        transform: rotate(40deg);
+        margin: 0;
+        position: relative;
+        right: 23%;
+        top: -2vh;
+    }
+
+    .join-image{
+        text-align: center;
+    }
+
+    .join-image img{
+        width: 40vw;
+        transform: rotate(360deg);
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .join-text{
+        width: 90vw;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin: 0 auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .join-insta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join-insta img{
+        width: 10%;
+        height: 5%;
+        margin-right: 10%;
+    }
+
+    .join-insta a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .join-youtube{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join-youtube img{
+        width: 17%;
+        height: 12%;
+        margin-right: 23%;
+    }
+
+    .join-youtube a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .join-youtube span{
+        font-size: 6px;
+    }
+
+    .oblique_line-top{
+        transform: rotate(150deg);
+        transform-origin: 0% 0%;
+        width: 5%;
+        border-top: 2px solid #fff;
+        margin: 0;
+        position: relative;
+        right: 15%;
+        top: -3vh;
+    }
+
+    .oblique_line-bottom{
+        transform: rotate(30deg);
+        transform-origin: 0% 0%;
+        width: 5%;
+        border-top: 2px solid #fff;
+        position: relative;
+        right: 1%;
+        top: -1vh;
+    }
+
+    /* footer */
+    footer p{
+        font-size: 12px;
+    }
+
+}

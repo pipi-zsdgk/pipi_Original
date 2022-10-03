@@ -6,7 +6,7 @@ $(function($){
         centerMode: false, 
         centerPadding: '40%', 
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: true,
         prevArrow: '<img src="/images/矢印.png" class="slide-arrow prev-arrow">',
         nextArrow: '<img src="/images/矢印.png" class="slide-arrow next-arrow">',
