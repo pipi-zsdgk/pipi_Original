@@ -3,6 +3,138 @@
     padding: 0;
 }
 
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #4F85A6;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #4F85A6;
+}
+
+.menu-content ul {
+    padding: 70px 700px;
+    line-height: 110px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.menu-content ul li {
+    list-style: none;
+}
+
+.menu-content ul li a {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color:#ffffff;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu-content ul li span{
+    font-size: 20px;
+    position: absolute;
+    margin-top: -80px;
+    margin-left: -34px;
+    text-align: center;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #4F85A6;
+    transition: all 0.5s;
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;
+}
+
+.follow-us{
+    display: flex;
+    margin-left: 670px;
+    margin-top: -30px;
+}
+
+.follow-us p{
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+    color:#ffffff;
+    margin-right: 50px;
+    letter-spacing: 0.1em;
+}
+
+.follow-us img{
+    margin-right: 30px;
+}
+
+.follow-insta img{
+    width: 50px;
+    height: 50px;
+    margin-top: -5px;
+}
+
+.follow-youtube img{
+    width: 90px;
+    height: 90px;
+    margin-top: -25px;
+}
+
 /* ファーストビュー */
 .top-page{
     animation: bgchange 20s ease infinite;
@@ -105,6 +237,7 @@
 #sum-activities{
     height: auto;
     background-color: #4F85A6;
+    padding-bottom: 5%;
 }
 
 .sum-activities-title-box{
@@ -615,6 +748,82 @@ footer p{
         min-width : 0;
     }
 
+    .menu-btn{
+        position: absolute;
+    }
+    
+    .menu-content ul {
+        line-height: 110px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        padding: 0;
+        padding-top: 80px;
+    }
+    
+    .menu-content ul li {
+        list-style: none;
+    }
+    
+    .menu-content ul li a {
+        font-family: 'Teko', sans-serif;
+        font-size: 30px;
+        color:#fff;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .menu-content ul li span{
+        font-size: 20px;
+        position: absolute;
+        margin-top: -80px;
+        margin-left: -34px;
+        text-align: center;
+    }
+    
+    .menu-content {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: 80;
+        background-color: #4F85A6;
+        transition: all 0.5s;
+    }
+    
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;
+    }
+
+    .follow-us{
+        display: block;
+        margin: 0;
+        text-align: center;
+    }    
+
+    .follow-us p{
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .follow-insta img{
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
+        display: flex;
+        margin-left: 165px;
+    }
+    
+    .follow-youtube img{
+        width: 45px;
+        height: 45px;
+        margin-top: -34px;
+        margin-left: 205px;
+        display: flex;
+    }
+
     /* ファーストビュー */
     #home{
         height: auto;
@@ -731,6 +940,7 @@ footer p{
     #sum-activities{
         height: auto;
         background-color: #4F85A6;
+        padding: 10% 0%;
     }
 
     .sum-activities-title-box{
@@ -803,11 +1013,170 @@ footer p{
     }
 
     .prev-arrow{
-        display: none;
+        width: 0;
+        height: 0;
+        margin-left: 0;
+        position: absolute;
+        top: 0;
+    }
+    
+    .next-arrow{
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    .next-arrow{
-        display: none;
+    /* Winter Activities */
+    #win-activities{
+        height: auto;
+        background-image: url(/images/haikei.png);
+        padding: 10% 0%;
+    }
+
+    .win-activities-title-box{
+        position: relative;
+    }
+
+    .win-activities-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 36px;
+        color: #4F85A6;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 10%;
+    }
+
+    .win-activities-sub-title{
+        font-family: 'Teko', sans-serif;
+        font-size: 80px;
+        color: #4F85A6;
+        letter-spacing: 0.1em;
+        text-align: center;
+        font-style: italic;
+        padding: 0;
+        opacity: 0.3;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .win-right{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .win-left{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .win-right-image{
+        text-align: center;
+    }
+
+    .win-left-image{
+        text-align: center;
+
+    }
+
+    .win-right-image img{
+        width: 70vw;
+        height: 25vh;
+        border-right: 2px solid #4F85A6;
+        padding-right: 10%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .win-left-image img{
+        width: 70vw;
+        height: 25vh;
+        border-left: 2px solid #4F85A6;
+        padding-left: 10%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+    .win-right-text-box{
+        width: 70vw;
+        height: 25vh;
+        background-color: #4F85A6;
+        margin: auto;
+        background-color: transparent;
+        padding-top: 10%;
+    }
+
+    .win-left-text-box{
+        width: 70vw;
+        height: 25vh;
+        background-color: #4F85A6;
+        margin: auto;
+        background-color: transparent;
+        padding-top: 10%;
+    }
+
+    .win-right-text-box h3{
+        color: #4F85A6;
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .win-right-text-box p{
+        color: #4F85A6;
+        font-size: 10px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+
+    .win-left-text-box h3{
+        color: #4F85A6;
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .win-left-text-box p{
+        color: #4F85A6;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        margin: 0;
+        text-align: center;
+    }
+
+    .win-right-number{
+        writing-mode: vertical-rl;
+        font-size: 24px;
+        font-weight: bold;
+        color: #4F85A6;
+        position: relative;
+        top: 35vh;
+        right: 5vw;
+    }
+
+    .win-left-number{
+        transform:rotate(270deg); 
+        font-size: 24px;
+        font-weight: bold;
+        color: #4F85A6;
+        position: relative;
+        top: 10vh;
+        left: -40vw;
     }
 
     /* Season Movie */
@@ -832,6 +1201,7 @@ footer p{
     }
 
     .season-movie-image img{
+        padding: 0;
         padding-left: 8%;
         padding-top: 5%;
         opacity: 0.3;
