@@ -1387,9 +1387,9 @@ footer p{
     .join-triangle{
         width: 0;
         height: 0;
-        border-left: 55px solid transparent;
-        border-bottom: 55px solid transparent;
-        border-right: 55px solid #fff;
+        border-left: 53px solid transparent;
+        border-bottom: 53px solid transparent;
+        border-right: 53px solid #fff;
         transform: rotate(40deg);
         margin: 0;
         position: relative;
