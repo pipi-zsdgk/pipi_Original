@@ -138,9 +138,9 @@
 /* ファーストビュー */
 .top-page{
     animation: bgchange 20s ease infinite;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
 }
 
 @keyframes bgchange {
@@ -151,24 +151,28 @@
     100% {background-image: url(images/fv-4.jpg)}
 }
 
-.main-logo{
+.main-logo img{
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 10%;
+    left: 5%;
+    width: 45%;
 }
 
-.sub-logo-1{
+.sub-logo-1 img{
     opacity: 0.1;
+    width: 45%;
     height: 30%;
 }
 
-.sub-logo-2{
+.sub-logo-2 img{
     opacity: 0.1;
+    width: 45%;
     height: 30%;
 }
 
-.sub-logo-3{
+.sub-logo-3 img{
     opacity: 0.1;
+    width: 45%;
     height: 30%;
 }
 
@@ -176,10 +180,12 @@
 
 #about{
     height: auto;
+    width: 100%;
 }
 
 .about-box{
     display: flex;
+    width: 100%;
 }
 
 .about-title{
@@ -214,21 +220,21 @@
 
 .about-img-box{
     position: relative;
-    top: 100px;
-    left: 150px;
+    top: 10vh;
+    left: 5%;
 }
 
 .about-img-square{
-    width: 500px;
-    height: 350px;
+    width: 30vw;
+    height: 20vw;
     background-color: #4F85A6;
     margin-left: 100px;
     position: absolute;
-    top: 50px;
+    top: 10%;
 }
 
 .about-img img{
-    width: 500px;
+    width: 30vw;
     position: absolute;
     left: 50px;
 }
@@ -272,7 +278,7 @@
 .images{
     margin: 0 auto;
     padding: 50px 0px;
-    width: 1000px;
+    width: 60%;
 }
 
 .image{
@@ -280,13 +286,13 @@
 }
 
 .image img{
-    width: 500px;
+    width: 30vw;
     height: 600px;
 }
 
 .sum-activities-text{
     background-color: #fff;
-    width: 500%;
+    width: 60vw;
     height: 600px;
 }
 
@@ -373,8 +379,8 @@
 }
 
 .win-right-image img{
-    width: 500px;
-    height: 300px;
+    width: 30vw;
+    height: 35vh;
     border-right: 2px solid #4F85A6;
     padding-right: 50px;
     position: relative;
@@ -383,8 +389,8 @@
 }
 
 .win-left-image img{
-    width: 500px;
-    height: 300px;
+    width: 30vw;
+    height: 35vh;
     border-left: 2px solid #4F85A6;
     padding-left: 50px;
     position: relative;
@@ -393,14 +399,14 @@
 }
 
 .win-right-text-box{
-    width: 500px;
-    height: 300px;
+    width: 30vw;
+    height: 35vh;
     background-color: #4F85A6;
 }
 
 .win-left-text-box{
-    width: 500px;
-    height: 300px;
+    width: 30vw;
+    height: 35vh;
     background-color: #4F85A6;
 }
 
@@ -492,8 +498,8 @@
 }
 
 .season-movie-movie{
-    width: 900px;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
 }
 
 .past-btn{
@@ -623,13 +629,25 @@
 }
 
 .join-square{
-    width: 40vw;
-    height: 20vh;
+    height: 12vw;
+    width: 35vw;
     background-color: #fff;
+    position:  relative;
+    top: 10vw;
+    left: -2%;
     transform: rotate(355deg);
-    position: relative;
-    top: 190px;
-    left: -10px;
+}
+
+.join-square::after{
+    content:  '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6vw 0 6vw 8vw;
+    border-color: transparent transparent transparent #fff;
+    position:  absolute;
+    top: 0%;
+    left: 100%;
 }
 
 .join-square p{
@@ -641,27 +659,15 @@
     padding-top: 30px;
 }
 
-.join-triangle{
-    width: 0;
-    height: 0;
-    border-left: 133px solid transparent;
-    border-bottom: 133px solid transparent;
-    border-right: 133px solid #fff;
-    transform: rotate(40deg);
-    margin-left: 476px;
-    margin-top: -43px;
-}
-
 .join-image img{
     width: 40vw;
     transform: rotate(355deg);
     position: relative;
     left: 50vw;
-    top: -20vh;
+    top: -8vw;
 }
 
 .join-text{
-    width: 50vw;
     font-size: 42px;
     font-weight: bold;
     color: #fff;
@@ -827,7 +833,12 @@ footer p{
     /* ファーストビュー */
     #home{
         height: auto;
+    }
+
+    .top-page{
         animation: bgchange 20s ease infinite;
+        width: 100vw;
+        height: 100vh;
         background-size: cover;
     }
     
@@ -837,10 +848,6 @@ footer p{
         50% {background-image: url(images/fv-2-sp.jpg)}
         75% {background-image: url(images/fv-3-sp.jpg)}
         100% {background-image: url(images/fv-4-sp.jpg)}
-    }
-
-    .top-page{
-        width: 100%;
     }
 
     .main-logo{
@@ -877,7 +884,7 @@ footer p{
     }
 
     .about-text-box{
-        width: 100vw;
+        width: 100%;
     }
 
     .about-title{
@@ -1366,35 +1373,34 @@ footer p{
     }
 
     .join-square{
-        width: 60vw;
-        height: 10vh;
+        height: 12vw;
+        width: 50vw;
         background-color: #fff;
-        transform: rotate(355deg);
+        position:  relative;
         top: 0;
-        left: -4%;
-        margin-bottom: 10%;
+        left: -2%;
+        transform: rotate(355deg);
+    }
+    
+    .join-square::after{
+        content:  '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6vw 0 6vw 8vw;
+        border-color: transparent transparent transparent #fff;
+        position:  absolute;
+        top: 0%;
+        left: 100%;
     }
 
     .join-square p{
         color: #4F85A6;
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: 0.1em;
         font-family: 'Teko', sans-serif;
         text-align: center;
-        padding: 8%;
-    }
-
-    .join-triangle{
-        width: 0;
-        height: 0;
-        border-left: 53px solid transparent;
-        border-bottom: 53px solid transparent;
-        border-right: 53px solid #fff;
-        transform: rotate(40deg);
-        margin: 0;
-        position: relative;
-        right: 23%;
-        top: -2vh;
+        padding: 0;
     }
 
     .join-image{
