@@ -918,6 +918,7 @@ footer p{
         margin: 0;
         text-align: center;
         margin-bottom: 10%;
+        width: 100%;
     }
 
     .about-text span{
@@ -926,7 +927,7 @@ footer p{
 
     .about-img-box{
         position: relative;
-        top: 0;
+        top: 5vh;
         left: 0;
         width: 80%;
         margin-bottom: 20%;
@@ -934,17 +935,17 @@ footer p{
 
     .about-img-square{
         width: 50vw;
-        height: 20vh;
+        height: 40vw;
         background-color: #4F85A6;
     }
 
     .about-img img{
         width: 50vw;
+        height: 40vw;
         left: -5vw;
         padding-right: 30%;
         padding-left: 30%;
         position: relative;
-        top: 5vh;
     }
 
     /* Summer Activities */
