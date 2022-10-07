@@ -1429,15 +1429,12 @@ footer p{
     }
 
     .join-insta{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 
     .join-insta img{
-        width: 10%;
+        width: 10vw;
         height: 5%;
-        margin-right: 10%;
     }
 
     .join-insta a{
@@ -1447,15 +1444,13 @@ footer p{
     }
 
     .join-youtube{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
     }
 
     .join-youtube img{
-        width: 17%;
+        width: 17vw;
         height: 12%;
-        margin-right: 23%;
+        margin-left: -35%;
     }
 
     .join-youtube a{
